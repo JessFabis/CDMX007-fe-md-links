@@ -1,4 +1,3 @@
-//probando
 const mdLinks = require('../');
 
 
