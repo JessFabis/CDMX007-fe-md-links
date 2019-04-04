@@ -1,4 +1,32 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "devDependencies": {
+    "jest": "^24.5.0"
+  },
+  "description": "[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado\r ligero muy popular entre developers. Es usado en muchísimas plataformas que\r manejan texto plano (GitHub, foros, blogs, ...), y es muy común\r encontrar varios archivos en ese formato en cualquier tipo de repositorio\r (empezando por el tradicional `README.md`).",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "link": "^0.1.5",
+    "markdown-it": "^8.4.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JessFabis/CDMX007-fe-md-links.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bin": {
+    "linki": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/JessFabis/CDMX007-fe-md-links/issues"
+  },
+  "homepage": "https://github.com/JessFabis/CDMX007-fe-md-links#readme"
 }
