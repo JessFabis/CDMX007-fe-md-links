@@ -10,7 +10,8 @@
     "test": "test"
   },
   "dependencies": {
-    "link": "^0.1.5"
+    "link": "^0.1.5",
+    "markdown-it": "^8.4.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

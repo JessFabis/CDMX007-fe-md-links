@@ -1,3 +1,3 @@
-module.exports = () => {
-  // ...
-};
+const archive = require("./reader.js");
+
+archive();

@@ -1,4 +1,11 @@
-const fs =require ('fs');
+
+
+const archivo =require ("./reader.js");
+
+archivo();
+
+
+
 
 //Para escribir un archivo
 /*fs.writeFile('./texto.txt','hola chicos',function(err){
@@ -9,10 +16,3 @@ const fs =require ('fs');
 });
 console.log ('ultima linea ');*/
 
-//para leer un archivo
-fs.readFile('./texto.txt', function(err,data){
-    if(err){
-        console.log (err);
-    }
-    console.log(data.toString());
-})

@@ -1,3 +1,4 @@
 #!/usr/bin/env node
 
-console.log("holis");
+const archive = require("./reader.js");
+archive();
