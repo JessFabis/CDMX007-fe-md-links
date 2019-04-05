@@ -2,7 +2,7 @@
   "name": "md-links",
   "version": "0.1.0",
   "devDependencies": {
-    "jest": "^24.5.0"
+    "jest": "^24.7.1"
   },
   "description": "[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado\r ligero muy popular entre developers. Es usado en muchísimas plataformas que\r manejan texto plano (GitHub, foros, blogs, ...), y es muy común\r encontrar varios archivos en ese formato en cualquier tipo de repositorio\r (empezando por el tradicional `README.md`).",
   "main": "index.js",
@@ -11,10 +11,11 @@
   },
   "dependencies": {
     "link": "^0.1.5",
-    "markdown-it": "^8.4.2"
+    "markdown-it": "^8.4.2",
+    "node-fetch": "^2.3.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",

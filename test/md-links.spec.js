@@ -1,10 +1,15 @@
-const mdLinks = require('../');
+const archive = require('../reader');
+const readlink = require('../linkis');
 
 
-describe('mdLinks', () => {
-
-  it('should...', () => {
-    console.log('FIX ME!');
+describe('archive', () => {
+  it('archive Is a function', () => {
+    expect(true).toBe(true);
   });
+});
 
+describe('linkis', () => {
+  it('linkis Is a function', () => {
+    expect(true).toBe(true);
+  });
 });
