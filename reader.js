@@ -2,6 +2,9 @@ const path = require('path')
 const fs = require('fs');
 const linkMD = require('./linkis');
 
+let probando =[];
+
+
 const archive = () => {
   fs.readdir('./', (err, data) => {
     if (err) {
@@ -10,11 +13,14 @@ const archive = () => {
       data.forEach(element => {
         if (path.extname(element) === ".md") {
           fs.readFile(element, 'utf-8', (err, data) => {
-            if (err)
+            if (err){
               console.log(err);
 
-            else
-              linkMD.readlink(data);
+            }else{
+            linkMD.readlink(data);
+           
+            
+            }
           });
         }
       });
