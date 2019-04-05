@@ -2,9 +2,6 @@ const path = require('path')
 const fs = require('fs');
 const linkMD = require('./linkis');
 
-let probando =[];
-
-
 const archive = () => {
   fs.readdir('./', (err, data) => {
     if (err) {
