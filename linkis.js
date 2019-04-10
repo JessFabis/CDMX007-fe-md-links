@@ -17,7 +17,11 @@ if(ObjectLink !== null){
       //console.log(linkStatus)
       if (linkStatus ===200){
         console.log(`${color.bgMagenta(linkName)}\n${color.rainbow(element)}\n ${color.green(linkStatus)} Link Valido\n`)
+      }else {
+        console.log(`${color.bgMagenta(linkName)}\n${color.rainbow(element)}\n ${color.green(linkStatus)} Link Roto
+        \n`)
       }
+
     })
   })
 }
