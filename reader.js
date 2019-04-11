@@ -1,11 +1,14 @@
 const path = require('path')
 const fs = require('fs');
 const linkMD = require('./linkis');
+const pathR = path.resolve (process.argv[2]);
+const command= process.argv[3];
+const color =require('colors');
+
 
 const archive = () => {
-  fs.readdir('./', (err, data) => {
-    const pathR = path.resolve ('./')
-    console.log ( 'ruta:'+pathR);
+  fs.readdir(pathR, (err, data) => {
+    console.log (`\ud83d\udd35 ${color.bgCyan("La Ruta del Archivo es :")}\ud83d\udcc2 ${color.green.underline(pathR)}	` );
     if (err) {
       console.log('error'+err);
     } else {
@@ -16,11 +19,13 @@ const archive = () => {
             if (err){
               console.log('error'+err);
 
-            }else{
+            }else if (command == '--validate'){
             linkMD.readlink(data);
             
             
-            }
+            }/*else if (command == '--states'){
+              linkMD.countLink(data);
+            }*/
           });
         }
       });
